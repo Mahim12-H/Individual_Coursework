@@ -16,7 +16,7 @@ st.write("You can look at the data by food category, country, or specific commod
 
 #Loading the CSV file
 # The file must be in the same folder as this app.py file
-data = pd.read_csv("FoodImports.csv")
+data = pd.read_csv("FoodImports.csv", encoding='latin1')
 
 #Showing the user how the dataset looks like 
 st.subheader("📄 Preview of the Data")
