@@ -75,8 +75,8 @@ st.subheader("📈 Import Value Over Time")
 fig, ax = plt.subplots()
 
 ax.plot(
-    filtered_data['Year'],
-    filtered_data['Import Value (Millions)'],
+    filtered_data['YearNum'],
+    filtered_data['FoodValue'],
     marker='o',        # Show dots at each point
     linestyle='-',     # Connect them with lines
     color='green'      # Line color
