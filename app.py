@@ -28,17 +28,17 @@ st.subheader("🔍 Filter the Data")
 
 filter_type = st.radio(
     "Choose a filter:",
-    ("Food Category", "Country", "Commodity")
+    ("Category", "Country", "Commodity")
 )
 
 #Show the output (menu) of what the user has shown to choose
 #Filters out the dataset to retrieve the appropriate and relevant outputs
 
-if filter_type == "Food Category":
+if filter_type == "Category":
     #Retrieves the info and shows the output to the user
-    selected_category = st.selectbox("Choose a food category:", data['Food Category'].unique())
+    selected_category = st.selectbox("Choose a food category:", data['Category'].unique())
     
-    filtered_data = data[data['Food Category'] == selected_category]
+    filtered_data = data[data['Category'] == selected_category]
     
     #Title for the chart that will be displayed to the user
     chart_title = f"Import Trends for Food Category: {selected_category}"
