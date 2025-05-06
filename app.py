@@ -84,7 +84,7 @@ ax.plot(
 
 # Adding relevant labels to the chart title 
 ax.set_title(chart_title)
-ax.set_xlabel("Year")
+ax.set_xlabel("YearNum")
 ax.set_ylabel("Import Value (Millions USD)")
 
 # Rotate x-axis- easier to read
